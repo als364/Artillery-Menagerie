@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>ArtilleryMenagerie</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.ArtilleryMenagerieServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ArtilleryMenagerie</servlet-name>
+		<url-pattern>/artillerymenagerie</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FindBattle</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.FindBattleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindBattle</servlet-name>
+		<url-pattern>/findbattle</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CancelBattle</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.CancelBattleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CancelBattle</servlet-name>
+		<url-pattern>/cancelbattle</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetBattleList</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.GetBattleListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetBattleList</servlet-name>
+		<url-pattern>/getbattlelist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FriendList</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.FriendListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FriendList</servlet-name>
+		<url-pattern>/friendlist</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>NewBattle</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.NewBattleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewBattle</servlet-name>
+		<url-pattern>/newbattle</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>JoinBattle</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.JoinBattleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JoinBattle</servlet-name>
+		<url-pattern>/joinbattle</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ResumeBattle</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.ResumeBattleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResumeBattle</servlet-name>
+		<url-pattern>/resumebattle</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetArmies</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.GetArmiesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetArmies</servlet-name>
+		<url-pattern>/getarmies</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoadBattleState</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.LoadBattleStateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadBattleState</servlet-name>
+		<url-pattern>/loadbattlestate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>StoreBattleState</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.StoreBattleStateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StoreBattleState</servlet-name>
+		<url-pattern>/storebattlestate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>NewUnitID</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.NewUnitIDServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUnitID</servlet-name>
+		<url-pattern>/newunitid</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>NewItemID</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.NewItemIDServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewItemID</servlet-name>
+		<url-pattern>/newitemid</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogIn</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.LogInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogIn</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>UpdatePlayer</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.UpdatePlayerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePlayer</servlet-name>
+		<url-pattern>/updateplayer</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Game</servlet-name>
+		<servlet-class>edu.cornell.artillerymenagerie.Game</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Game</servlet-name>
+		<url-pattern>/game</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>Quercus Servlet</servlet-name>
+        <servlet-class>com.caucho.quercus.servlet.GoogleQuercusServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>Quercus Servlet</servlet-name>
+        <url-pattern>*.php</url-pattern>
+    </servlet-mapping>
+ 
+    <welcome-file-list>
+        <welcome-file>index.php</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
